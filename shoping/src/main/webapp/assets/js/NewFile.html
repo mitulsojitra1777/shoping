@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link
+	src="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+</head>
+<body>
+	<table id="example" class="display" style="width: 100%">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Position</th>
+				<th>Office</th>
+				<th>Extn.</th>
+				<th>Start date</th>
+				<th>Salary</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<th>name</th>
+				<th>brand</th>
+				<th>descreption</th>
+				<th>quntity</th>
+				<th>unitPrice</th>
+				<th>purchases</th>
+				<th>views</th>
+				<th></th>
+			</tr>
+		</tfoot>
+	</table>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#example').DataTable({
+				"ajax" : "http://localhost:8080/shoping/json/data/all/product",
+				 "dataSrc": "",
+			"columns" : [   
+			                 { data: 'name' },
+			                 { data: 'brand' },
+			                 { data: 'descreption' },
+			                 { data: 'quntity' },
+			                 { data: 'unitPrice' },
+			                 { data: 'purchases' },
+			                 { data: 'views' },
+			                 { data: 'id',
+			                	 "mData":"id",
+			                	    
+			                	    mRender: function (data, type, row)
+			                	    {
+			                	        
+			                	        
+			                	        
+			                	        return 'm'+data;
+			                	    }
+			                	 
+			                 }
+			]
+			});
+		});
+	</script>
+</body>
+</html>

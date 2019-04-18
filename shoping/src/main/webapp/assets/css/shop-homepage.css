@@ -1,0 +1,41 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+html{
+	width:100%
+}
+body {
+  padding-top: 56px;
+  height:100%
+}
+.carousel-item{
+	width:100%
+}
+carousel-holder{
+	margin-bottom: 30px;
+}
+
+carousel-control,
+.item{
+	margin-bottom: 30px;
+}
+
+
+.wrapper{
+	min-height: 100%;
+	position: relative;
+	
+}
+.content{
+	
+}
+.btn-product{
+	
+}
+
+.help-block{
+	color: #ff0000;
+	
+}
